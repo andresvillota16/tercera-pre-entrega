@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Programación Funcional con Javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <h1>Contador de Calorias</h1>
+        </header>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Calorias</th>
+                        <th>Carbohidratos</th>
+                        <th>Proteinas</th>
+                    </tr>
+                </thead>
+                <tbody id="list-items">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td id="total">Total</td>
+                        <td id="total-calorias">0</td>
+                        <td id="total-carbohidratos">0</td>
+                        <td id="total-proteinas">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="form-container">
+            <form action="javascript:void(0);">
+                <div>
+                    <input type="text" name="Descripción" id="Descripción" placeholder="Descripción">
+                    <input type="number" min="0" name="Calorias" id="Calorias" placeholder=" Calorias">
+                    <input type="number" min="0" name="Carbohidratos" id="Carbohidratos" placeholder="Carbohidratos">
+                    <input type="number" min="0" name="Proteinas" id="Proteinas" placeholder="Proteinas">
+                </div>
+                <button class="add" id="add">+</button>
+            </form>
+        </div>
+    </div>
+    <script src="./calorias.js"></script>
+</body>
+
+</html>
